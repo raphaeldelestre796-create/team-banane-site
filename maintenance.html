@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Maintenance - Team Banane</title>
+
+<style>
+body{
+    margin:0;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    background: radial-gradient(circle, #1a1a1a, #000);
+    color:white;
+    font-family:Arial, sans-serif;
+    text-align:center;
+}
+
+/* Titre */
+h1{
+    font-size:60px;
+    color:#FFD500;
+    text-shadow:0 0 20px rgba(255,213,0,0.8);
+    animation: glow 2s infinite alternate;
+}
+
+/* Texte */
+p{
+    font-size:20px;
+    opacity:0.8;
+    margin:10px;
+}
+
+/* Animation */
+@keyframes glow{
+    from{
+        text-shadow:0 0 10px #FFD500;
+    }
+    to{
+        text-shadow:0 0 30px #FFA500;
+    }
+}
+
+/* Loader banane */
+.loader{
+    margin-top:30px;
+    width:60px;
+    height:60px;
+    border:6px solid #333;
+    border-top:6px solid #FFD500;
+    border-radius:50%;
+    animation:spin 1s linear infinite;
+}
+
+@keyframes spin{
+    to{transform:rotate(360deg);}
+}
+
+/* Bouton retour caché admin */
+a{
+    margin-top:30px;
+    color:#FFD500;
+    text-decoration:none;
+    font-size:14px;
+    opacity:0.3;
+}
+</style>
+
+</head>
+
+<body>
+
+<h1>🍌 Maintenance</h1>
+
+<p>Le site Team Banane est en cours de mise à jour.</p>
+<p>On rencontre des problèmes </p>
+
+<div class="loader"></div>
+
+<!-- bouton admin discret -->
+<a href="index.html">retour</a>
+
+</body>
+</html>
